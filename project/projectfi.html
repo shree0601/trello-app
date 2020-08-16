@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <style>
+    
+    .tr{
+
+text-align: center;
+
+top:0;
+border:1px solid black;
+width:100em;
+
+}
+.po
+{
+    text-align:left;
+    padding-top: 2px;
+    border:1px solid black;
+    width:100em
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  
+    background-image:url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.board {
+    display: flex;
+  padding-top: 8em;
+  min-width: 100%;
+  min-height: 300px;
+}
+.content {
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        opacity:1.0;
+        color: grey;   
+        font-weight: bold;
+    min-width: 250px;
+    height:200px;
+    margin: 8px;
+    
+}
+.board{
+    
+    overflow-x: auto;
+}
+.it{
+    margin-top:10px;
+    width:230px;
+    margin-right:5px;
+    margin-left: 5px;
+    height:30px;
+    color: grey;
+    opacity: 1.0;
+    border: grey;
+    border-radius: 4px;
+}
+ 
+.c{
+    margin-top:10px;
+    width:230px;
+    margin-right:5px;
+    margin-left: 5px;
+    height:30px;
+    color: grey;
+    border:grey;
+    border-radius: 4px;
+}
+.j{
+    margin-top:10px;
+    width:230px;
+    margin-right:5px;
+    margin-left: 5px;
+    height:30px;
+    color: grey;
+    border:grey;
+    border-radius:4px;
+}
+.last{
+    padding-top:10px;
+    padding-left: 10px;
+    color:grey;
+}
+#a{
+     margin-left:10px;
+    word-spacing:155px;
+
+}
+.testing{
+    background-color: #f1f1f1;
+    opacity:1.0;
+    color: grey;   
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  min-width: 250px;
+  height:220px;
+  margin: 8px;
+}
+.p{
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width:225px;
+    height:70px;
+    border: grey;
+    text-align: left;
+}
+.do{
+    padding-left: 10px;
+    word-spacing: 50px;
+}
+.re{
+    border-radius: 4px;
+    margin-top:10px;
+    width:230px;
+    margin-right:6px;
+    margin-left: 6px;
+    height:30px;
+    color: grey;
+    border: grey;
+}
+.bc{
+    margin-top: 12px;
+    margin-left: 5px;
+    border-radius: 8px;
+    background-color: lightseagreen;
+    
+    color:white;
+    height:35px;
+    
+}
+.verify{
+    background-color: #f1f1f1;
+    opacity: 1.0;
+    color: grey;   
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+     min-width: 250px;
+  height:100px;
+  margin: 8px;
+}
+.t{
+    border-radius: 4px;
+    margin-top:10px;
+    width:230px;
+    margin-right:5px;
+    margin-left: 5px;
+    height:30px;
+    color: grey;
+    border: grey;
+}
+.l{
+    margin-top:10px;
+    margin-left: 5px;
+    color:grey;
+}
+.deploy{
+    background-color: #f1f1f1;
+    opacity:1.0;
+    color: grey;   
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  min-width: 250px;
+  height:100px;
+  margin: 8px;
+
+}
+.back
+{
+    margin-top:10px;
+    width:230px;
+    margin-right:5px;
+    margin-left: 5px;
+    height:30px;
+    color: grey;
+    border-radius: 4px;
+    border: grey;
+
+}
+.la{
+    margin-top:10px;
+    margin-left: 5px;
+    color:grey;
+}
+.Done{
+    background-color: #f1f1f1;
+    opacity:1.0;
+    color: grey;   
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  min-width: 250px;
+  height:50px;
+  margin: 8px;
+}
+.ca{
+     margin-top:10px;
+     color:grey;
+}
+.sample{
+    background-color: #f1f1f1;
+    
+    color: grey;   
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  min-width: 250px;
+  height:25px;
+  margin: 8px;
+   padding: 5px;
+   color:grey;
+}
+    .final{
+        background-color: #f1f1f1;
+    color: grey;   
+    font-weight: bold;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+  min-width: 250px;
+  height:165px;
+  margin: 8px;
+
+    }
+    .list{
+        margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width:225px;
+    height:70px;
+    border: grey;
+    }
+    .bt{
+     border-radius: 8px;
+     color:whitesmoke;
+    background-color: lightseagreen;
+    margin-top: 15px;
+    margin-left: 5px;
+    height:35px;
+    }
+    #do{
+        word-spacing: 175px;
+    }
+    #ws{
+
+        word-spacing: 100px;
+    }
+    #ds{
+        word-spacing: 145px;
+    }
+    #s{
+        word-spacing: 174px;
+    }
+    .it:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+
+    .c:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+
+    }
+    .j:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .last:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+
+    }
+    .re:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .bc:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .t:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .l:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .back:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .la:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .ca:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+
+    }
+    .q:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+    .bt:hover{
+        cursor: pointer;
+        border-color:white;
+        opacity: 0.6;
+    }
+        .fa{
+            position: inherit;
+            margin:15px;
+        }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="pointer">
+                <i class="home fas fa-home"></i>
+            </li>
+            <li class="pointer">
+                <i class="boards fas fa-th-list"></i>
+                Boards
+            </li>
+            <li class="menu-input">
+                <input type="text" />
+            </li>
+        </ul>
+        <div class="app-title">
+            Tralala
+        </div>
+        <div class="actions">
+            <span class="pointer">
+                <i class="fas fa-plus" id="add-board"></i>
+            </span>
+            <span class="pointer">
+                <i class="fas fa-user" id="profile-image"></i>
+            </span>
+        </div>
+    </nav>
+    <div class="board-container">
+        <div class="board-menu">
+            <div class="board-title">Frontend Training</div>
+            <div class="board-show-menu pointer">
+                <i class="fas fa-ellipsis-v"></i>
+                Show menu
+            </div>
+        </div>
+      
+    <section class="board"> 
+        <div class="content" >TO<span id="a">DO ...</span><br>
+            <a>
+            <input type="text" class="it" value="Learn HTML" >
+            
+        </a>
+            <input type="text" class="c" value="Learn  CSS" >
+            
+            
+            <input type="text" class="j" value="Learn JavaScript" >
+            
+            <div class="last">+Add another card</div>
+        </div>
+   <div class="testing"> <span id="do">Doing ...</span><br>
+     <input type="text" class="re" value="Prepare Resume">
+     <input type="text" class="p"placeholder="Enter the title for this card">
+        <button class="bc">Add Card</button><i class="fa fa-close" style="font-size:25px"></i>
+
+        </div>
+        <div class="verify"><span id="ws">Testing/verifying ...</span> <br>
+            <input type="text" class="t" value="Twitter app Frontend">
+            <div class="l">+Add another card</div>
+        
+        </div>
+
+        <div class="deploy"><span id="ds">Deploying ...</span><br>
+            <input type="text" class="back" value="Twitter app backend">
+           <div class="la">+Add another card</div>
+        </div>
+
+        <div class="Done"><span id="s">Done ...</span><br>
+            <div class="ca">+Add card</div>
+        </div>
+        <div class="sample">
+            <a class="q">+Add another list
+                </a>
+        </div>
+        <div class="final">
+            <input type="text" class="list"placeholder="Enter List title... ">
+         <button class="bt">Add List</button><i class="fa fa-close" style="font-size:25px"></i>
+
+        </div> 
+      </section>
+</body>
+</html>
